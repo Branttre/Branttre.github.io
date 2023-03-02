@@ -1,0 +1,42 @@
+body {
+    background-color:black;
+}
+.text {
+    color:#09B300;
+    font-family: monospace;
+}
+
+h1 {
+    font-size:8vh;
+}
+
+h2 {
+    font-size: 5vh;
+}
+
+p {
+    font-size:large;
+}
+
+
+
+.box p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.box p::after {
+    content:"";
+    width: 5px;
+    height: 16px;
+    background:rgb(170, 170, 170);
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity:0;
+    }
+}
